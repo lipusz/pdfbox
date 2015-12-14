@@ -32,7 +32,7 @@ public class SignatureOptions
     private int pageNo;
   
     /**
-     * Set the page number.
+     * Set the 1-based page number.
      * 
      * @param pageNo the page number
      * 
