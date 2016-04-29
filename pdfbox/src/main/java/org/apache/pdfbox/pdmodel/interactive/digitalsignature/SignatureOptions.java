@@ -22,7 +22,9 @@ import java.io.InputStream;
 import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.VisualSignatureParser;
 
-
+/**
+ * This contains the visual signature as a COSDocument, its preferred size and the page.
+ */
 public class SignatureOptions
 {
     private COSDocument visualSignature;
