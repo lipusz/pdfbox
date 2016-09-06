@@ -85,12 +85,13 @@ public abstract class PDAnnotation implements COSObjectable
 
     private COSDictionary dictionary;
 
-    /**
+   /**
      * Create the correct annotation from the base COS object.
      *
      * @param base The COS object that is the annotation.
      * @return The correctly typed annotation object.
-     * @throws IOException If there is an error while creating the annotation.
+     *
+     * @throws IOException If the annotation type is unknown.
      */
     // TODO not yet implemented: 
     // Movie, Screen, PrinterMark, TrapNet, Watermark, 3D, Redact
