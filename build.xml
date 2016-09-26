@@ -420,7 +420,7 @@
 
     <target name="compile" depends="init">
         <!-- required encoding flag to be able to build using ibm-jdk on redhat ES-->
-        <javac srcdir="${src.dir}" destdir="${dest.dir}" debug="on" classpathref="build.classpath" deprecation="on" encoding="ISO-8859-1"/>
+        <javac source="1.2" target="1.2" srcdir="${src.dir}" destdir="${dest.dir}" debug="on" classpathref="build.classpath" deprecation="on" encoding="ISO-8859-1"/>
     </target>
 
     <target name="javadoc" depends="compile">
