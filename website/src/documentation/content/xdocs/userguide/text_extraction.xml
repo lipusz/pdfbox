@@ -1,37 +1,22 @@
-<!--
- ! Licensed to the Apache Software Foundation (ASF) under one or more
- ! contributor license agreements.  See the NOTICE file distributed with
- ! this work for additional information regarding copyright ownership.
- ! The ASF licenses this file to You under the Apache License, Version 2.0
- ! (the "License"); you may not use this file except in compliance with
- ! the License.  You may obtain a copy of the License at
- !
- !      http://www.apache.org/licenses/LICENSE-2.0
- !
- ! Unless required by applicable law or agreed to in writing, software
- ! distributed under the License is distributed on an "AS IS" BASIS,
- ! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- ! See the License for the specific language governing permissions and
- ! limitations under the License.
- !-->
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
-<document>
-  <header>
-    <title>PDFBox - PDF Text Extraction</title>
+<document> 
+  <header> 
+    <title>PDFBox - PDF Text Extraction</title> 
     <meta name="keywords">Java PDF Library, pdftotext, PDF to text, java pdf text extraction</meta>
-  </header>
-  <body>
+  </header> 
+  <body> 
     <section>
         <title>Extracting Text</title>
         <p>
-            See class:<a href="../javadoc/org/apache/pdfbox/util/PDFTextStripper.html">org.apache.pdfbox.util.PDFTextStripper</a> <br/>
-            See class:<a href="../javadoc/org/apache/pdfbox/searchengine/lucene/LucenePDFDocument.html">org.apache.pdfbox.searchengine.lucene.LucenePDFDocument</a> <br/>
+            See class:<a href="../javadoc/org/pdfbox/util/PDFTextStripper.html">org.pdfbox.util.PDFTextStripper</a> <br/>
+            See class:<a href="../javadoc/org/pdfbox/searchengine/lucene/LucenePDFDocument.html">org.pdfbox.searchengine.lucene.LucenePDFDocument</a> <br/>
             See command line app:<a href="../commandlineutilities/ExtractText.html">ExtractText</a> <br/>
         </p>
         <p>
             One of the main features of PDFBox is its ability to quickly and accurately extract text from a variety of PDF documents.
-            This functionality is encapsulated in the <a href="../javadoc/org/apache/pdfbox/util/PDFTextStripper.html">org.apache.pdfbox.util.PDFTextStripper</a> and
-            can be easily executed on the command line with <a href="../javadoc/org/apache/pdfbox/ExtractText.html">org.apache.pdfbox.ExtractText</a>.
+            This functionality is encapsulated in the <a href="../javadoc/org/pdfbox/util/PDFTextStripper.html">org.pdfbox.util.PDFTextStripper</a> and
+            can be easily executed on the command line with <a href="../javadoc/org/pdfbox/ExtractText.html">org.pdfbox.ExtractText</a>.
         </p>
         <section>
           <title>Lucene Integration</title>
@@ -42,9 +27,9 @@
           Document luceneDocument = LucenePDFDocument.getDocument( ... );
           </source>
           <p>
-          Now that you hava a Lucene Document object, you can add it to the Lucene index just like you would if it had been
+          Now that you hava a Lucene Document object, you can add it to the Lucene index just like you would if it had been 
           created from a text or HTML file.
-          The <a href="../javadoc/org/apache/pdfbox/searchengine/lucene/LucenePDFDocument.html">LucenePDFDocument</a> automatically extracts
+          The <a href="../javadoc/org/pdfbox/searchengine/lucene/LucenePDFDocument.html">LucenePDFDocument</a> automatically extracts
           a variety of metadata fields from the PDF to be added to the index, the javadoc shows details on those fields.
           This approach is very simple and should be sufficient for most users, if not then you can use some of the advanced text extraction
           techniques described in the next section.
@@ -53,12 +38,12 @@
         <section>
             <title>Advanced Text Extraction</title>
             <p>Some applications will have complex text extraction requiments and neither the command line application nor the LucenePDFDocument
-            will be able to fulfill those requirements.  It is possible for users to utilize or extend the
-            <a href="../javadoc/org/apache/pdfbox/util/PDFTextStripper.html">PDFTextStripper</a> class to meet some of these requirements.</p>
+            will be able to fulfill those requirements.  It is possible for users to utilize or extend the 
+            <a href="../javadoc/org/pdfbox/util/PDFTextStripper.html">PDFTextStripper</a> class to meet some of these requirements.</p>
             <section>
                 <title>Limiting The Extracted Text</title>
                 <p>
-                There are several ways that we can limit the text that is extracted during the extraction process.  The simplest is to
+                There are several ways that we can limit the text that is extracted during the extraction process.  The simplest is to 
                 specify the range of pages that you want to be extracted.  For example, to only extract text from the second and third pages
                 of the PDF document you could do this:
                 </p>
@@ -68,14 +53,14 @@
             stripper.setEndPage( 3 );
             stripper.writeText( ... );
         </source>
-
+                
                 <note>The startPage and endPage properties of PDFTextStripper are 1 based and inclusive.</note>
-                <p>If you wanted to start on page 2 and extract to the end of the document then you would just set the startPage property.
+                <p>If you wanted to start on page 2 and extract to the end of the document then you would just set the startPage property.  
                 By default all pages in the pdf document are extracted.</p>
-
+                
                 <p>It is also possible to limit the extracted text to be between two bookmarks in the page.  If you are not familiar with
                 how to use bookmarks in PDFBox then you should review the <a href="bookmarks.html">Bookmarks</a> page.  Similar to the startPage/endPage
-                properties, PDFTextStripper also has startBookmark/endBookmark properties.  There are some caveats to be aware of when using this
+                properties, PDFTextStripper also has startBookmark/endBookmark properties.  There are some caveats to be aware of when using this 
                 feature of the PDFTextStripper.  Not all bookmarks point to a page in the current PDF document.  The possible states of a bookmark are:</p>
                 <ul>
                     <li>null - The property was not set, this is the default.</li>
@@ -108,7 +93,7 @@
                     <tr>
                         <td>Bookmark does not point to anything</td>
                         <td>null</td>
-                        <td>Because the PDFTextStripper cannot determine a start page based on the bookmark, it will start on the first page and go until
+                        <td>Because the PDFTextStripper cannot determine a start page based on the bookmark, it will start on the first page and go until 
                             the end of the document.</td>
                     </tr>
                     <tr>
@@ -120,7 +105,7 @@
                     <tr>
                         <td>Bookmark does not point to anything</td>
                         <td>Bookmark does not point to anything</td>
-                        <td>This is a special case!  If the startBookmark and endBookmark are exactly the same then no text will be extracted.  If
+                        <td>This is a special case!  If the startBookmark and endBookmark are exactly the same then no text will be extracted.  If 
                             they are different then it is not possible for the PDFTextStripper to determine that pages so it will include the
                             entire document.</td>
                     </tr>
@@ -134,14 +119,6 @@
                 <note>PDFTextStripper will check both the startPage/endPage and the startBookmark/endBookmark to determine if text should
                       be extracted from the current page.</note>
             </section>
-            <section>
-                <title>External Glyph List</title>
-                <p>Some PDF files need to map between glyph names and Unicode values during text extraction.  PDFBox comes with an <a href="http://partners.adobe.com/public/developer/en/opentype/glyphlist.txt">Adobe Glyph List</a>, but you may encounter files with glyph names that are not in that map. To use  your own glyphlist file, supply the file name to the <tt>glyphlist_ext</tt> JVM property. </p>
-           </section>
-           <section>
-                <title>Right to Left Text</title>
-                <p>Extracting text in languages whose text goes from right to left (such as Arabic and Hebrew) in PDF files can result in text that is backwards.  PDFBox can normalize and reverse the text if the <a href="http://icu-project.org/">ICU4J</a> jar file has been placed on the classpath (it is an optional dependency). Note that you should also enable sorting with either <a href="../javadoc/org/apache/pdfbox/util/PDFTextStripper.html">org.apache.pdfbox.util.PDFTextStripper</a> or <a href="../javadoc/org/apache/pdfbox/ExtractText.html">org.apache.pdfbox.ExtractText</a> to ensure accurate output.</p>
-           </section>
         </section>
 
     </section>

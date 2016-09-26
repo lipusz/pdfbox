@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE rss PUBLIC "-//Netscape Communications//DTD RSS 0.91//EN" "http://my.netscape.com/publish/formats/rss-0.91.dtd">
+<rss version="0.91"><channel><title> Changes</title><link>changes.html</link><description> Changes</description><language>en-us</language><item><title> fix</title><link>changes.html</link><description> fix
+              by 
+              BJL
+              :
+              [ 1170068 ] text field is not found</description></item><item><title> fix</title><link>changes.html</link><description> fix
+              by 
+              BJL
+              :
+              fixed NPE issue where an image did not have any applied filters</description></item><item><title> fix</title><link>changes.html</link><description> fix
+              by 
+              BJL
+              :
+              Fixed issue where extra spaces were being added during text extraction for type3 fonts</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              [ 1119420 ] Extract and Update the Meta-Information as XML</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              [ 1119410 ] Extract text in/between bookmarks</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              [ 1164476 ] XFDFImport should fail with non XFDF document</description></item><item><title> add</title><link>changes.html</link><description> add
+              by 
+              BJL
+              :
+              [ 1119408 ] Support named target for Bookmark extraction.</description></item><item><title> add</title><link>changes.html</link><description> add
+              by 
+              BJL
+              :
+              Created Resources/PDFBox_External_Fonts.properties to create a mapping for non-embedded fonts</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              **API Change** Renamed PDField.getName() to PDField.getPartialName(), added method getFullyQualifiedName() </description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              **API Change** Renamed PDWidget to PDAnnotationWidget for naming consistency</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              Text is now extracted from embedded form xobjects.</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              Deployed site to new hosting vendor.</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              committed code for PDFHighlighter to highlight words in a PDF document.</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              Added command line application org.pdfbox.PDFToImage</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              Implemented runlength decoding</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              Added patch from Jorge Hernández Sellés to append content streams to existing page.</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              **API Change**renamed package from pdmodel.graphics.image to pdmodel.graphics.xobject</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              **API Change**Removed PDRadioButton, should use PDCheckbox instead</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              **API Change**COSStream now extends COSDictionary instead of containing a dictionary</description></item><item><title> update</title><link>changes.html</link><description> update
+              by 
+              BJL
+              :
+              [ 1021241 ] Text extraction should follow PDF article divisions</description></item><item><title> add</title><link>changes.html</link><description> add
+              by 
+              BJL
+              :
+              Added implementation for PDF page articles</description></item><item><title> add</title><link>changes.html</link><description> add
+              by 
+              BJL
+              :
+              Created TextToPDF command line application</description></item><item><title> add</title><link>changes.html</link><description> add
+              by 
+              BJL
+              :
+              Created ImageToPDF example</description></item><item><title> fix</title><link>changes.html</link><description> fix
+              by 
+              BJL
+              :
+              fixed parsing of header where a trailing % exists</description></item><item><title> fix</title><link>changes.html</link><description> fix
+              by 
+              BJL
+              :
+              [ 1110029 ] Character "&gt;" not quoted in COSName::writePDF</description></item></channel></rss>
